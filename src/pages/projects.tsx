@@ -14,7 +14,7 @@ const Projects: NextPage = () => {
   return (
     <div className="w-full">
       <h1 className="font-light tracking-wide">
-        Here are a couple projects I've worked on in my free time. Some
+        Here are a couple projects I&apos;ve worked on in my free time. Some
         finished, others a <i>work in progress ...</i>
       </h1>
       <div className="pt-16">
@@ -36,7 +36,7 @@ const Projects: NextPage = () => {
         />
       </div>
       <h1 className={`${gelasio.className} text-[#A4A4A5] pl-14`}>
-        More ideas and stuff comin' ...
+        More ideas and stuff comin&apos; ...
       </h1>
     </div>
   );

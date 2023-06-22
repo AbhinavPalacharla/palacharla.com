@@ -7,8 +7,8 @@ const Index: NextPage = () => {
     <div className="flex flex-col">
       <div className="flex flex-col gap-y-8 font-light tracking-wide">
         <h1>
-          Hey, I'm Abhinav. I'm a student developer and designer based in San
-          Diego, CA.
+          Hey, I&apos;m Abhinav. I&apos;m a student developer and designer based
+          in San Diego, CA.
         </h1>
         <h1>
           Previously: developed AI integrated solutions at <u>Okulis</u>, Web3
