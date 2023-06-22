@@ -5,7 +5,7 @@ import Link from "next/link";
 const Index: NextPage = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col gap-y-8 font-light">
+      <div className="flex flex-col gap-y-8 font-light tracking-wide">
         <h1>
           Hey, I'm Abhinav. I'm a student developer and designer based in San
           Diego, CA.

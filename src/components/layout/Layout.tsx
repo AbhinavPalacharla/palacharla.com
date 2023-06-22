@@ -8,9 +8,7 @@ const inter = Inter({
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div
-      className={`${inter.variable} bg-[#1C1C1C] min-h-screen relative text-white`}
-    >
+    <div className={`${inter.variable} bg-[#1C1C1C] min-h-screen text-white`}>
       <meta
         name="theme-color"
         content={
@@ -22,7 +20,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <Navbar />
       </div>
       <div className="flex flex-row items-center px-36">{children}</div>
-      <div className="absolute bottom-0 w-full">
+      <div className="sticky top-[100vh] w-full">
         <Footer />
       </div>
     </div>
