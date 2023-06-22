@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 import { Project } from "@/components/project";
 
-import { Gelasio } from "@next/font/google";
+import { Gelasio } from "next/font/google";
 
 const gelasio = Gelasio({
   weight: ["400"],
