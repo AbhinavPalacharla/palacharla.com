@@ -4,7 +4,7 @@ import { Roboto_Mono } from "next/font/google";
 const robotoMono = Roboto_Mono({
   weight: ["300"],
   subsets: ["latin"],
-  style: ["italic"],
+  // style: ["italic"],
 });
 
 const Footer: React.FC = () => {
