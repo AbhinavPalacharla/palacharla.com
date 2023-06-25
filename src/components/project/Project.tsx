@@ -23,7 +23,7 @@ const Project: React.FC<{ name: string; description: string }> = ({
     >
       {viewDetails ? (
         <NavArrowDown
-          className="w-5 h-5 lg:w-5.5 lg:h-5.5 text-[#777777] bg-red-200"
+          className="w-5 h-5 lg:w-5.5 lg:h-5.5 text-[#777777]"
           onClick={() => {
             setViewDetails(!viewDetails);
           }}
