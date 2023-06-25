@@ -13,7 +13,7 @@ const Project: React.FC<{ name: string; description: string }> = ({
 
   return (
     <div
-      className="flex flex-row gap-x-8 w-[85%]"
+      className="flex flex-row gap-x-4 lg:gap-x-8 w-full lg:w-[85%]"
       onMouseEnter={() => {
         setHover(true);
       }}
@@ -23,14 +23,14 @@ const Project: React.FC<{ name: string; description: string }> = ({
     >
       {viewDetails ? (
         <NavArrowDown
-          className="w-5.5 h-5.5 text-[#777777]"
+          className="w-5 h-5 lg: w-5.5 lg: h-5.5 text-[#777777]"
           onClick={() => {
             setViewDetails(!viewDetails);
           }}
         />
       ) : (
         <NavArrowRight
-          className="w-5.5 h-5.5 text-[#777777]"
+          className="w-5 h-5 lg:w-5.5 lg:h-5.5 text-[#777777]"
           onClick={() => {
             setViewDetails(!viewDetails);
           }}
@@ -38,13 +38,15 @@ const Project: React.FC<{ name: string; description: string }> = ({
       )}
       <div className="flex flex-col w-full">
         <div
-          className="flex flex-row items-center justify-between"
+          className="flex flex-row justify-between"
           onClick={() => {
             setViewDetails(!viewDetails);
           }}
         >
-          <h1>{name}</h1>
-          <h1 className="text-[#A4A4A4] font-light">{description}</h1>
+          <h1 className="text-sm lg:text-base pr-6">{name}</h1>
+          <h1 className="text-[#A4A4A4] font-light text-sm lg:text-base">
+            {description}
+          </h1>
         </div>
         {viewDetails && (
           <div className="pt-6">

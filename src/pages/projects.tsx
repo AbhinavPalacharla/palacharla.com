@@ -13,11 +13,11 @@ const gelasio = Gelasio({
 const Projects: NextPage = () => {
   return (
     <div className="w-full">
-      <h1 className="font-light tracking-wide">
+      <h1 className="font-light tracking-wide text-sm lg:text-base">
         Here are a couple projects I&apos;ve worked on in my free time. Some
         finished, others a <i>work in progress ...</i>
       </h1>
-      <div className="pt-16">
+      <div className="pt-8 lg:pt-16">
         <Project
           name="Curate"
           description="A personal service I made for myself to curate design inspiration from twitter."
@@ -35,7 +35,7 @@ const Projects: NextPage = () => {
           description="An AI chatbot that can parse documentation and generate answers to questions."
         />
       </div>
-      <h1 className={`${gelasio.className} text-[#A4A4A5] pl-14`}>
+      <h1 className={`${gelasio.className} text-[#A4A4A5] pl-8 lg:pl-14`}>
         More ideas and stuff comin&apos; ...
       </h1>
     </div>
