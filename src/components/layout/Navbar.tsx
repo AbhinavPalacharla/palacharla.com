@@ -21,7 +21,7 @@ const Route: React.FC<{ name?: string; alias: string }> = ({ name, alias }) => {
 
 const Navbar: React.FC = () => {
   return (
-    <div className="flex flex-row items-center justify-between pt-16 pb-16">
+    <div className="flex flex-row items-center justify-between pt-8 pb-8 lg:pt-16 lg:pb-16">
       {/* <h1 className="font-serif text-3xl">Abhinav Palacharla</h1> */}
       <h1 className="font-serif text-3xl">AP</h1>
       <div className="flex flex-row items-center gap-x-4 lg:gap-x-8 text-sm">
