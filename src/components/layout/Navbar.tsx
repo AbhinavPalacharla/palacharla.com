@@ -12,7 +12,7 @@ const Route: React.FC<{ name?: string; alias: string }> = ({ name, alias }) => {
           ? "underline underline-offset-2"
           : "text-[#A4A4A5]"
       }
-      prefetch={true}
+      // prefetch={true}
     >
       {alias}
     </Link>
@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
     <div className="flex flex-row items-center justify-between pt-16 pb-16">
       {/* <h1 className="font-serif text-3xl">Abhinav Palacharla</h1> */}
       <h1 className="font-serif text-3xl">AP</h1>
-      <div className="flex flex-row items-center gap-x-8">
+      <div className="flex flex-row items-center gap-x-4 lg:gap-x-8 text-sm">
         <Route name="/" alias="About" />
         <Route name="/projects" alias="Projects" />
         <Route alias="Photography" />

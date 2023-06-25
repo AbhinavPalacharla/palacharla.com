@@ -44,20 +44,19 @@ const Footer: React.FC = () => {
   }, [blink, setBlink]);
 
   return (
-    <div className="flex items-center justify-between text-sm pb-6 pt-16 px-36 bg-[#1C1C1C]">
+    <div className="flex items-center justify-between text-xs lg:text-sm px-8 pb-6 pt-12 lg:pb-6 lg:pt-16 lg:px-36 bg-[#1C1C1C]">
       <h1 className="font-light">2023 © Abhinav Palacharla</h1>
 
-      <div className="flex flex-row">
-        <div
-          className={`flex flex-row items-center gap-x-0.5 ${robotoMono.className} w-20`}
-        >
+      <div className="flex flex-row items-center gap-x-2">
+        <div className={`flex flex-row items-center ${robotoMono.className}`}>
           <h1>{time.hour}</h1>
           <h1 className={` ${blink ? "text-[#A4A4A5]" : ""}`}>:</h1>
           <h1>{time.minute}</h1>
           <h1 className={` ${blink ? "text-[#A4A4A5]" : ""}`}>:</h1>
           <h1>{time.second}</h1>
         </div>
-        <h1 className={robotoMono.className}>— San Diego, CA</h1>
+
+        <h1 className={`${robotoMono.className}`}>— SD, CA</h1>
       </div>
     </div>
   );
