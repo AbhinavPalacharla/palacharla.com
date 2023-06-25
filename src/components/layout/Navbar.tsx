@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
     <div className="flex flex-row items-center justify-between pt-8 pb-8 lg:pt-16 lg:pb-16">
       {/* <h1 className="font-serif text-3xl">Abhinav Palacharla</h1> */}
       <h1 className="font-serif text-3xl">AP</h1>
-      <div className="flex flex-row items-center gap-x-4 lg:gap-x-8 text-sm">
+      <div className="flex flex-row items-center gap-x-4 lg:gap-x-8 text-sm lg:text-base">
         <Route name="/" alias="About" />
         <Route name="/projects" alias="Projects" />
         <Route alias="Photography" />
