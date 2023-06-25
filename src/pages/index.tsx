@@ -7,8 +7,8 @@ const Index: NextPage = () => {
     <div className="flex flex-col">
       <div className="flex flex-col gap-y-6 lg:gap-y-8 font-light tracking-wide text-sm lg:text-base">
         <h1 className="leading-relaxed">
-          Hey, I&apos;m Abhinav. I&apos;m a student developer and designer based
-          in San Diego, CA.
+          Hey, I&apos;m <i>Abhinav</i>. I&apos;m a student developer and
+          designer based in San Diego, CA.
         </h1>
 
         <h1 className="sm: visible lg:invisible lg:hidden sm:leading-relaxed lg:leading-normal">
