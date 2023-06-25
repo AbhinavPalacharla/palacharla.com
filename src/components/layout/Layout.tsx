@@ -16,10 +16,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         }
         style={{ backgroundColor: "#1C1C1C" }}
       />
-      <div className="px-36">
+      <div className="px-8 lg:px-36">
         <Navbar />
       </div>
-      <div className="flex flex-row items-center px-36">{children}</div>
+      <div className="flex flex-row items-center px-8 lg:px-36">{children}</div>
       <div className="sticky top-[100vh] w-full">
         <Footer />
       </div>
