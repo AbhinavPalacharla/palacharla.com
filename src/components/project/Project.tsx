@@ -70,7 +70,7 @@ const Project: React.FC<{ name: string; description: string }> = ({
             </div>
             <div className="flex flex-col sm: gap-y-4 lg:flex-row lg:items-center justify-between px-2">
               <Link
-                className="text-sm font-light italic text-[#A4A4A4]"
+                className="text-sm font-light italic text-[#A4A4A4] w-full"
                 href="https://github.com/AbhinavPalacharla/curate-personal"
               >
                 View on <u className="underline-offset-1">Github</u>
