@@ -45,7 +45,9 @@ const Footer: React.FC = () => {
 
   return (
     <div className="flex items-center justify-between text-xs lg:text-sm px-8 pb-6 pt-12 lg:pb-6 lg:pt-16 lg:px-36 bg-[#1C1C1C]">
-      <h1 className="font-light">2023 © Abhinav Palacharla</h1>
+      <h1 className={`font-light ${robotoMono.className}`}>
+        2023 © Abhinav P.
+      </h1>
 
       <div className="flex flex-row items-center gap-x-2">
         <div className={`flex flex-row items-center ${robotoMono.className}`}>
