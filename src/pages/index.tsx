@@ -2,7 +2,14 @@ import { NextPage } from "next";
 import { Divider } from "@/components/shared";
 import Link from "next/link";
 
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+
 const Index: NextPage = () => {
+  const { isLoading, isError, data } = useQuery(["projects"], async () => {
+    return axios.get("/api/getProjects");
+  });
+
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-y-6 lg:gap-y-8 font-light tracking-wide text-sm lg:text-base">
