@@ -15,7 +15,7 @@ interface DatabaseResponse extends Omit<QueryDatabaseResponse, "results"> {
   )[];
 }
 
-type Project = {
+export type Project = {
   name: string;
   description: string;
   source_link: string;
@@ -38,9 +38,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   const projects: Array<Project> = rows.map((row) => {
     return {
-      name: row.Name.title[0].type,
+      name: row.Name.title[0].plain_text,
       description: row.description.rich_text[0].plain_text,
-      source_link: row.source_link.url,
+      source_link: row.source_link.rich_text[0].plain_text,
       image_links: row.image_links.rich_text
         .map((text: any) => {
           return text.href;

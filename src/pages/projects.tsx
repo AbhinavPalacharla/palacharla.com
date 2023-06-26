@@ -1,8 +1,11 @@
 import { NextPage } from "next";
 
 import { Project } from "@/components/project";
+import type { Project as ProjectType } from "@/pages/api/getProjects";
 
 import { Gelasio } from "next/font/google";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 const gelasio = Gelasio({
   weight: ["400"],
@@ -11,33 +14,39 @@ const gelasio = Gelasio({
 });
 
 const Projects: NextPage = () => {
+  const { isLoading, isError, data } = useQuery(["projects"], async () => {
+    return axios.get("/api/getProjects");
+  });
+
   return (
     <div className="w-full">
       <h1 className="font-light tracking-wide text-sm lg:text-base">
         Here are a couple projects I&apos;ve worked on in my free time. Some
         finished, others a <i>work in progress ...</i>
       </h1>
-      <div className="pt-8 lg:pt-16">
-        <Project
-          name="Curate"
-          description="A personal service I made for myself to curate design inspiration from twitter."
-        />
-        <Project
-          name="Scheme"
-          description="A collaborative API prototyping platform to increase collaborate between teams."
-        />
-        <Project
-          name="NBA Viewer"
-          description="A Raycast extension to access live NBA information at your fingertips. ~680 Downloads"
-        />
-        <Project
-          name="AI Docs"
-          description="An AI chatbot that can parse documentation and generate answers to questions."
-        />
-      </div>
-      <h1 className={`${gelasio.className} text-[#A4A4A5] pl-8 lg:pl-14`}>
-        More ideas and stuff comin&apos; ...
-      </h1>
+      {isLoading ? (
+        <></>
+      ) : (
+        data && (
+          <>
+            <div className="pt-8 lg:pt-16">
+              {data.data.map((project: ProjectType) => (
+                <Project
+                  key={project.name}
+                  name={project.name}
+                  description={project.description}
+                  images={project.image_links}
+                  source_link={project.source_link}
+                  technologies={project.technologies}
+                />
+              ))}
+            </div>
+            <h1 className={`${gelasio.className} text-[#A4A4A5] pl-8 lg:pl-14`}>
+              More ideas and stuff comin&apos; ...
+            </h1>
+          </>
+        )
+      )}
     </div>
   );
 };
