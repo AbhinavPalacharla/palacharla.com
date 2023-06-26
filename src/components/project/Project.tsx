@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { NavArrowDown, NavArrowRight } from "iconoir-react";
 
@@ -57,9 +58,11 @@ const Project: React.FC<{
             <div className="flex flex-row items-center overflow-x-scroll scroll-smooth scrollbar-hide">
               {images.map((image) => {
                 return (
-                  <img
+                  <Image
+                    key={image}
                     className="max-w-[150%] w-auto max-h-[24rem]"
                     src={image}
+                    alt="Project Image"
                   />
                 );
               })}
