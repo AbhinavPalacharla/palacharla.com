@@ -90,19 +90,39 @@ const Index: NextPage = () => {
         transition={{ delay: 0.4 }}
         animate={{ opacity: 1 }}
       >
-        <Link className="hover:underline" href="">
+        <Link
+          className="hover:underline"
+          target="_blank"
+          href="https://www.linkedin.com/in/abhinav-palacharla-79aaa3175/"
+        >
           LinkedIn
         </Link>
-        <Link className="hover:underline" href="">
+        <Link
+          className="hover:underline"
+          href="mailto:abhinav.palacharla@gmail.com"
+          target="_blank"
+        >
           Email
         </Link>
-        <Link className="hover:underline" href="">
+        <Link
+          className="hover:underline"
+          href="https://github.com/AbhinavPalacharla"
+          target="_blank"
+        >
           Github
         </Link>
-        <Link className="hover:underline" href="">
+        <Link
+          className="hover:underline"
+          href="https://read.cv/palacharla"
+          target="_blank"
+        >
           Read.CV
         </Link>
-        <Link className="hover:underline" href="">
+        <Link
+          className="hover:underline"
+          href="https://twitter.com/A_Palacharla"
+          target="_blank"
+        >
           Twitter
         </Link>
       </motion.div>
