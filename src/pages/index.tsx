@@ -17,7 +17,7 @@ const Index: NextPage = () => {
         <motion.h1
           className="leading-relaxed"
           initial={{ opacity: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.3, duration: 0.3 }}
           animate={{ opacity: 1 }}
         >
           Hey, I&apos;m <i className="font-serif">Abhinav</i>. I&apos;m a
@@ -27,7 +27,7 @@ const Index: NextPage = () => {
         <motion.h1
           className="sm:visible lg:invisible lg:hidden sm:leading-relaxed lg:leading-normal"
           initial={{ opacity: 0 }}
-          transition={{ delay: 0.25 }}
+          transition={{ delay: 0.35, duration: 0.35 }}
           animate={{ opacity: 1 }}
         >
           Previously: developed AI integrated solutions at <u>Okulis</u>, Web3
@@ -37,7 +37,7 @@ const Index: NextPage = () => {
         <motion.h1
           className="sm:hidden lg:visible lg:inline-block"
           initial={{ opacity: 0 }}
-          transition={{ delay: 0.25 }}
+          transition={{ delay: 0.35, duration: 0.35 }}
           animate={{ opacity: 1 }}
         >
           Previously developed AI integrated solutions at <u>Okulis</u>, Web3
@@ -48,7 +48,7 @@ const Index: NextPage = () => {
         <motion.h1
           className="sm:visible lg:invisible lg:hidden leading-relaxed"
           initial={{ opacity: 0 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
           animate={{ opacity: 1 }}
         >
           Currently developing web apps with{" "}
@@ -59,7 +59,7 @@ const Index: NextPage = () => {
         <motion.h1
           className="sm:hidden lg:visible lg:inline-block"
           initial={{ opacity: 0 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
           animate={{ opacity: 1 }}
         >
           Currently developing web apps with{" "}
@@ -71,7 +71,7 @@ const Index: NextPage = () => {
         <motion.h1
           className="sm:leading-relaxed lg:leading-normal"
           initial={{ opacity: 0 }}
-          transition={{ delay: 0.35 }}
+          transition={{ delay: 0.45, duration: 0.45 }}
           animate={{ opacity: 1 }}
         >
           Feel free to reach out to me on any of my socials.
@@ -79,7 +79,7 @@ const Index: NextPage = () => {
       </div>
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
         animate={{ opacity: 1 }}
       >
         <Divider className="pt-8 lg:pt-16 pb-4 lg:pb-8" />
@@ -87,7 +87,7 @@ const Index: NextPage = () => {
       <motion.div
         className="flex flex-row items-center gap-x-4 lg:gap-x-12 italic font-light text-sm lg:text-base tracking-wider"
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
         animate={{ opacity: 1 }}
       >
         <Link
