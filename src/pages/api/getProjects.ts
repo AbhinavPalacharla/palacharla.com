@@ -35,8 +35,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     database_id: database_id,
   })) as Partial<DatabaseResponse>;
 
-  console.log(response);
-
   const rows = response.results!.map((result) => result.properties);
 
   const projects: Array<Project> = rows.map((row) => {

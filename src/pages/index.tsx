@@ -30,9 +30,9 @@ const Index: NextPage = () => {
           transition={{ delay: 0.35, duration: 0.35 }}
           animate={{ opacity: 1 }}
         >
-          Previously: developed AI integrated solutions at <u>Okulis</u>, Web3
-          interfaces at <u>Mintra</u> and <u>Unsung</u>, and blockchain based
-          protocols at <u>SDSC</u>.
+          Currently: developing AI integrated solutions at <u>Okulis</u>.
+          Previously: Web3 interfaces at <u>Mintra</u> and <u>Unsung</u>, and
+          blockchain based protocols at <u>SDSC</u>.
         </motion.h1>
         <motion.h1
           className="sm:hidden lg:visible lg:inline-block"
@@ -40,9 +40,9 @@ const Index: NextPage = () => {
           transition={{ delay: 0.35, duration: 0.35 }}
           animate={{ opacity: 1 }}
         >
-          Previously developed AI integrated solutions at <u>Okulis</u>, Web3
-          interfaces at <u>Mintra</u> and <u>Unsung</u>, and <br /> blockchain
-          based protocols at <u>SDSC</u>.
+          Currently: developing AI integrated solutions at <u>Okulis</u>.
+          Previously: Web3 interfaces at <u>Mintra</u> and <u>Unsung</u>,<br />{" "}
+          and blockchain based protocols at <u>SDSC</u>.
         </motion.h1>
 
         <motion.h1
