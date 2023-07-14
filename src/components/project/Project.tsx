@@ -12,7 +12,15 @@ const Project: React.FC<{
   images: Array<string>;
   source_link: string;
   technologies: Array<string>;
-}> = ({ name, description, images, source_link, technologies }) => {
+  noImgPadding?: boolean;
+}> = ({
+  name,
+  description,
+  images,
+  source_link,
+  technologies,
+  noImgPadding,
+}) => {
   const [viewDetails, setViewDetails] = useState(false);
   const [hover, setHover] = useState(false);
 
@@ -58,12 +66,18 @@ const Project: React.FC<{
             <div className="flex flex-row items-center overflow-x-scroll scroll-smooth scrollbar-hide">
               {images.map((image) => {
                 return (
-                  <Image
-                    key={image}
-                    className="max-w-[150%] w-auto max-h-[24rem]"
-                    src={image}
-                    alt="Project Image"
-                  />
+                  <>
+                    <Image
+                      key={image}
+                      className={`max-w-[150%] w-auto max-h-[24rem] rounded-md ${
+                        noImgPadding ? "mt-2" : "my-6 mx-6"
+                      }`}
+                      src={image}
+                      alt="Project Image"
+                      width={5000}
+                      height={5000}
+                    />
+                  </>
                 );
               })}
             </div>

@@ -30,7 +30,7 @@ const Projects: NextPage = () => {
         data && (
           <>
             <div className="pt-8 lg:pt-16">
-              {data.data.map((project: ProjectType) => (
+              {data.data.map((project: ProjectType, i: number) => (
                 <Project
                   key={project.name}
                   name={project.name}
@@ -38,6 +38,7 @@ const Projects: NextPage = () => {
                   images={project.image_links}
                   source_link={project.source_link}
                   technologies={project.technologies}
+                  noImgPadding={i === 0}
                 />
               ))}
             </div>
