@@ -16,6 +16,7 @@ interface DatabaseResponse extends Omit<QueryDatabaseResponse, "results"> {
 }
 
 export type Project = {
+  order: number;
   name: string;
   description: string;
   source_link: string;
@@ -34,10 +35,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     database_id: database_id,
   })) as Partial<DatabaseResponse>;
 
+  console.log(response);
+
   const rows = response.results!.map((result) => result.properties);
 
   const projects: Array<Project> = rows.map((row) => {
     return {
+      order: row.order.rich_text[0].plain_text,
       name: row.Name.title[0].plain_text,
       description: row.description.rich_text[0].plain_text,
       source_link: row.source_link.rich_text[0].plain_text,

@@ -26,7 +26,7 @@ const Project: React.FC<{
 
   return (
     <div
-      className="flex flex-row gap-x-4 lg:gap-x-8 w-full lg:w-[85%]"
+      className="flex flex-row gap-x-4 lg:gap-x-8 w-full lg:max-w-[85%]"
       onMouseEnter={() => {
         setHover(true);
       }}
@@ -62,14 +62,14 @@ const Project: React.FC<{
           </h1>
         </div>
         {viewDetails && (
-          <div>
+          <div className="">
             <div className="flex flex-row items-center overflow-x-scroll scroll-smooth scrollbar-hide">
               {images.map((image) => {
                 return (
                   <>
                     <Image
                       key={image}
-                      className={`max-w-[150%] w-auto max-h-[24rem] rounded-md ${
+                      className={`w-auto max-h-[24rem] rounded-md ${
                         noImgPadding ? "mt-2" : "my-6 mx-6"
                       }`}
                       src={image}
