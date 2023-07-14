@@ -21,12 +21,12 @@ const Project: React.FC<{
   technologies,
   noImgPadding,
 }) => {
-  const [viewDetails, setViewDetails] = useState(false);
+  const [viewDetails, setViewDetails] = useState(true);
   const [hover, setHover] = useState(false);
 
   return (
     <div
-      className="flex flex-row gap-x-4 lg:gap-x-8 w-full lg:max-w-[85%]"
+      className="flex flex-row gap-x-4 lg:gap-x-8 w-full"
       onMouseEnter={() => {
         setHover(true);
       }}
@@ -34,7 +34,7 @@ const Project: React.FC<{
         setHover(false);
       }}
     >
-      {viewDetails ? (
+      {/* {viewDetails ? (
         <NavArrowDown
           className="w-5 h-5 lg:w-5.5 lg:h-5.5 text-[#777777]"
           onClick={() => {
@@ -48,13 +48,13 @@ const Project: React.FC<{
             setViewDetails(!viewDetails);
           }}
         />
-      )}
+      )} */}
       <div className="flex flex-col w-full">
         <div
           className="flex flex-row justify-between"
-          onClick={() => {
-            setViewDetails(!viewDetails);
-          }}
+          // onClick={() => {
+          //   setViewDetails(!viewDetails);
+          // }}
         >
           <h1 className="text-sm lg:text-base pr-6">{name}</h1>
           <h1 className="text-[#A4A4A4] font-light text-sm lg:text-base">
