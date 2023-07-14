@@ -16,6 +16,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         }
         style={{ backgroundColor: "#1C1C1C" }}
       />
+      <meta property="og:image" content="og.png" />
+      <meta property="og:title" content="Abhinav Palacharla · Portfolio" />
       <div className="px-8 lg:px-36">
         <Navbar />
       </div>
