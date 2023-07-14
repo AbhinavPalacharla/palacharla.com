@@ -85,6 +85,7 @@ const Project: React.FC<{
               <Link
                 className="text-sm font-light italic text-[#A4A4A4] w-full"
                 href={source_link}
+                target="_blank"
               >
                 View on <u className="underline-offset-1">Github</u>
               </Link>
