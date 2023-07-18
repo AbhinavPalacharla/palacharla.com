@@ -93,7 +93,7 @@ const Index: NextPage = () => {
         <Link
           className="hover:underline"
           target="_blank"
-          href="https://www.linkedin.com/in/abhinav-palacharla-79aaa3175/"
+          href="www.linkedin.com/in/abhinavpalacharla"
         >
           LinkedIn
         </Link>
@@ -110,13 +110,6 @@ const Index: NextPage = () => {
           target="_blank"
         >
           Github
-        </Link>
-        <Link
-          className="hover:underline"
-          href="https://read.cv/palacharla"
-          target="_blank"
-        >
-          Read.CV
         </Link>
         <Link
           className="hover:underline"
