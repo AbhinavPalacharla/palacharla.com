@@ -30,7 +30,7 @@ const Index: NextPage = () => {
           transition={{ delay: 0.35, duration: 0.35 }}
           animate={{ opacity: 1 }}
         >
-          Currently: developing AI integrated solutions at <u>Okulis</u>.
+          Currently: developing AI integrated solutions at <u>Lumeus</u>.
           Previously: Web3 interfaces at <u>Mintra</u> and <u>Unsung</u>, and
           blockchain based protocols at <u>SDSC</u>.
         </motion.h1>
