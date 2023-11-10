@@ -43,6 +43,7 @@ const Projects: NextPage = () => {
                     source_link={project.source_link}
                     technologies={project.technologies}
                     noImgPadding={i === 0}
+                    longDescription={project.long_description}
                   />
                 ))}
             </div>

@@ -22,6 +22,7 @@ export type Project = {
   source_link: string;
   image_links: string[];
   technologies: string[];
+  long_description: string;
 };
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -53,6 +54,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
           }
         }),
       technologies: row.technologies.rich_text[0].plain_text.split(", "),
+      long_description: row.long_description.rich_text[0].plain_text,
     };
   });
 

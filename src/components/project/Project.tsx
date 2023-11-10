@@ -13,6 +13,7 @@ const Project: React.FC<{
   source_link: string;
   technologies: Array<string>;
   noImgPadding?: boolean;
+  longDescription: string;
 }> = ({
   name,
   description,
@@ -20,6 +21,7 @@ const Project: React.FC<{
   source_link,
   technologies,
   noImgPadding,
+  longDescription,
 }) => {
   const [viewDetails, setViewDetails] = useState(true);
   const [hover, setHover] = useState(false);
@@ -80,6 +82,11 @@ const Project: React.FC<{
                   </>
                 );
               })}
+            </div>
+            <div className="mb-8 ml-6">
+              <h1 className="text-[#A4A4A4] font-light text-sm lg:text-base">
+                {longDescription}
+              </h1>
             </div>
             <div className="flex flex-col sm: gap-y-4 lg:flex-row lg:items-center justify-between px-2">
               <Link
